@@ -7,6 +7,7 @@ import { ProtectedRoute } from './components/auth/ProtectedRoute'
 // Keep the homepage eager — it's the most common entry point and should
 // have zero extra network round-trip before first paint.
 import { Home } from './pages/Home'
+import { NotFound } from './pages/NotFound'
 
 // Everything else loads on demand.
 const Shop = lazy(() => import('./pages/Shop').then((m) => ({ default: m.Shop })))
@@ -54,6 +55,7 @@ const App = () => {
               <Route path="/orders" element={<Orders />} />
               <Route path="/checkout" element={<Checkout />} />
             </Route>
+            <Route path="*" element={<NotFound />} />
           </Route>
 
           <Route element={<ProtectedRoute allowedRoles={['admin']} />}>
