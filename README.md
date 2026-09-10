@@ -2,7 +2,7 @@
 
 A design-forward, editorial-inspired e-commerce experience built to explore modern React architecture, motion design, and full-stack product thinking — from storefront to checkout to an internal admin dashboard.
 
-Live demo: [](https://nova-livid-xi.vercel.app/)
+Live demo: [click](https://nova-livid-xi.vercel.app/)
 
 ---
 
